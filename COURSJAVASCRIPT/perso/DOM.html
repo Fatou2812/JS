@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="gros_titre">Decouverte du DOM html </h1>
+    <p class="para">Du texte et <a href="http://pierre-giraud.com"> un lien</a></p>
+    <p class="para">Un deuxieme paragraphe</p>
+    <script>
+        // Accéder à un élément par son ID
+        //var titre=document.getElementById("gros_titre");
+       // var titre=document.getElementById("gros_titre").innerHTML="Titre modifié";    //pour modifier le contenu
+       //var titre=document.getElementById("gros_titre").innerHTML+="et de la modification en javascript"
+        //recuperer le contenu de l'element
+        //var titre=document.getElementById("gros_titre").innerHTML; //La propriété innerHTML en JavaScript est utilisée pour obtenir ou définir le contenu HTML d'un élément.
+        // Elle permet d'accéder au code HTML interne d'un élément, y compris ses balises, attributs et texte.
+        //alert(titre)
+
+        // Accéder à tous les éléments d'une balise
+        //var tableau=document.getElementsByTagName("p");
+        //alert ("notre tableau contient "+tableau.length+" paragraphes");
+
+        // Accéder à tous les éléments d'une classe(attribut class)
+        //var ElementsByClass=document.getElementsByClassName("para");
+ 
+        //La méthode document.querySelector() est une fonction JavaScript qui permet de 
+        //sélectionner un seul élément du document en utilisant un sélecteur CSS. Elle renvoie 
+        //le premier élément qui correspond au sélecteur spécifié.
+        //var lien=document.querySelector('p a');
+       // var p=document.querySelectorAll(".para")
+       //La propriété textContent en JavaScript est utilisée pour obtenir ou définir le contenu textuel d'un élément, sans interpréter le texte comme HTML. Elle renvoie le texte brut contenu dans un élément, y compris tout texte dans ses descendants.
+      // var p=document.querySelector(".para").innerHTML;
+       //var c=document.querySelector(".para").textContent;
+       //alert("p: "+p+
+       //"\n c: "+c)
+        //alert("infos du lien "+lien+
+        //"\n p[0]: "+p[0]+
+        //"\n p[1]: "+p[1]);
+ 
+        // creer un nouveau element html exemple p
+        var newpara=document.createElement("p");
+        newpara.id="nouveau" // un id a notre nouveau paragraphe
+        var texte=document.createTextNode("insere")  // du texte
+        newpara.appendChild(texte);  // texte inserer dans le paragraphe
+        document.body.appendChild(newpara);  //paragraphe inserer dans notre document dans le body
+         
+        // pour supprimer
+        var titre=document.getElementById("gros_titre");
+        var parent=document.body;
+        parent.removeChild(titre);
+        // .replaceChild() pour modifier un element  ex h1 EN h2
+        
+    </script>
+</body>
+</html>

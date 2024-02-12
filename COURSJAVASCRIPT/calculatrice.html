@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            height: 100vh;
+            margin: 0;
+            margin: 20px;
+            background-color: white;
+        }
+
+        form {
+            display: inline-block;
+            text-align: center;
+            border: 2px solid #ccc;
+            border-color: rgb(16, 15, 15);
+            padding: 50px;
+            margin-top: 60px; 
+            background-color: pink;
+        }
+        #L {
+            display: block;
+            margin-bottom: 5px;
+            
+        }
+       
+        input {
+            margin-bottom: 10px;
+            padding: 8px;
+            width: 200px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: gray;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .align-inline {
+            display: inline-block;
+            margin-bottom: 10px; /* Espace entre les éléments pour améliorer la lisibilité */
+        }
+       
+    </style>
+
+</head>
+<body>
+    
+    <form id="monFormulaire" action="#" method="post">
+       
+        <label  for="nombre1">Nombre1:</label>
+        <input type="text" id="nombre1" name="nombre 1" required>
+
+        <br>
+      
+        <label  for="nombre2">Nombre2 :</label>
+        <input type="text" id="nombre2" name="nombre 2" required>
+        <br>
+
+        <label id="L"  for="operation" class="align-inline">Operation :</label>
+        <select id="operation" name="operation" class="align-inline">
+            <option value="Addition">Addition</option>
+            <option value="Soustraction">Soustraction</option>
+            <option value="Multiplication">Multiplication</option>
+            <option value="Division">Division</option>
+           
+        </select>
+        <br>
+        <label  for="resultat">Resultat:</label>
+        <input type="text" id="resultat" name="resultat" readonly>
+        <br>
+        <label  for="decimal">Decimal:</label>
+        <input type="text" id="decimal" name="decimal" required>
+        <br>
+
+        <label  for="binaire">Binaire :</label>
+        <input type="text" id="binaire" name="binaire"  readonly>
+
+        <br> 
+ 
+        <br >
+        <input type="button"  value="Valider" id="bouton"/>
+        <br >
+        <input type="reset"  value="Effacer" id="bouton"/>
+        
+    </form>
+
+
+</body>
+<script src="calculatrice.js"></script>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Jeu devinette</h1>
+    <script>
+        var compte=0;
+        var devinette=parseInt(Math.floor(Math.random()*101));
+        do{
+            var devine=parseInt(prompt("Devine le nombre mystere"))
+            if(devine<devinette)
+            {
+                alert("Trop basse")
+            }
+            if(devine>devinette){
+                alert("Trop élevée")
+            }
+            if(devine>100 || devine<0)
+            {
+                alert("nombre compris entre 0 et 100")
+            }
+            compte++;
+        }
+        while(devine!==devinette);
+
+        alert("Bravo votre nombre mystere est "+devinette+
+        "\n Vous l'avez deviné  en "+compte+" tentative(s)")
+        
+    </script>
+    
+</body>
+</html>

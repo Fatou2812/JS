@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H1>LA PORTEE</H1>
+    //la portee designe la possibilite d'acceder ou non a une variable
+    //La portée détermine où une variable peut être utilisée et référencée dans votre code. 
+    //En JavaScript, il existe deux principaux types de portée : la portée globale et la portée locale.
+    // dans une fonction si on declare une variable sans le mot cle var celle si se comporte comme une variable globale
+    <h1>NOTIONS AVANCEES SUR LES FONCTIONS</h1>
+    <script>
+       /* var carre= function (x){
+           alert("le carre de "+x+" = "+x*x) ;
+        };
+        var y=prompt("entrer un nombre")
+        carre(y);
+        */
+       //les closures
+       function compteur(){
+        var i=0;
+        return function()
+        {
+            return i++;
+        }
+       }
+       var plusUn=compteur();
+       alert("premier tour: "+plusUn()+
+       "\n deuxieme tour: "+plusUn()+
+       "\n troixieme tour: "+plusUn());
+    </script>
+
+</body>
+</html>

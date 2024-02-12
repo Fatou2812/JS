@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         form
+         {
+            border: 2px solid #dddddd;
+            width: 350px;    
+           
+        }
+        table{
+            border-collapse: collapse;
+            width: 50%;
+            top: 400px;
+        }
+        th,td{
+            border: 2px solid#dddddd;
+            text-align: left;
+            padding: 8px;
+            width: 100px;
+        }
+        td{
+            height:  10px;
+        }
+        .contenu{
+           
+            align-items: center;
+            margin-top: -345px;
+            margin-left: 352px;
+        }
+    </style>
+</head>
+<body>
+   
+    <form action="#" method="#">
+        <label for="prenom">Prenom</label> <br><br>
+        &nbsp;<input type="text" id="prenom" > <br><br>
+        <label for="nom">Nom</label> <br><br>
+        &nbsp;<input type="text" id="nom"> <br><br>
+        <label for="date">Date de naissance</label> <br><br>
+        &nbsp;<input type="date" id="date"> <br><br>
+        <label for="email">Email</label> <br><br>
+        &nbsp;<input type="email" id="email"> <br> <br> 
+        &nbsp;<button type="button" onclick="enregistrer()">ENREGISTRER</button>
+        &nbsp;&nbsp; <button type="reset">EFFACER</button><br><br>
+
+    </form>
+
+
+<div class="contenu">
+    <table id="tableau">
+        <tr>
+            <th>ID</th>
+            <th>Prenom</th>
+            <th>Nom</th>
+            <th>Email</th>
+            <th style="width: 100px;">Action</th>
+        </tr>
+        
+    </table>
+</div>
+</body>
+<script src="form.js"></script>
+</html>

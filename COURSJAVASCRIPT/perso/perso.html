@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Introduction aux objets</h1>
+    <h2>Les tableaux</h2>
+
+    <script>
+//primitive
+        var primitive="je suis une valeur primitive";
+//objet
+ /*       var moi={
+            prenom:"Dangala",
+            nom:"Ndiaye",
+            age:32,
+
+            identite:function(){
+                return 'Prenom: '+this.prenom+
+                '\nNom: '+this.nom+
+                '\nAge: '+this.age;
+            }
+
+        }
+        alert(moi.identite());
+        var chaine=new String("je suis un objet");
+        alert("primitive: "+typeof(primitive));
+        alert("chaine: "+typeof(chaine));
+        
+        //autre maniere de creer un objet
+        var obje_cree=new Object();
+        obje_cree.prenom='jana';
+        obje_cree.nom='marley';
+        alert(obje_cree.prenom);
+
+        // objet avec la methode du constructeur
+         function Identite(p,n,a){
+            this.prenom=p;
+            this.nom=n;
+            this.age=a;
+         }
+         var dany=new Identite("Dangala","Ndiaye",32);
+         var fatou=new Identite("Fatou","Camara",22);
+         alert("Age de dany: "+dany.age+
+         "\nAge de fatou: "+fatou.age);*/
+         
+         var prenoms=["Dany","fatou","khady","astou"],p="";
+         var animaux=["minou","choupi"]
+         /*
+         alert(prenoms[2])
+         prenoms[0]="paul"  // remplace la valeur situee a la position 0 par paul
+         alert(prenoms[0])
+         prenoms[prenoms.length]="awa" //s'ajoute a la liste
+         alert(prenoms.length)
+         var taille=prenoms.push("sabrina","ibrahima");
+         for(var i=0;i<prenoms.length;i++)
+         {
+            p+=" prenom"+(i+1)+" : "+prenoms[i]+"\n\n";
+         }
+         alert(p);
+         var supp=prenoms.pop(); // supprime le dernier element du tableau
+         
+         alert("nous avons supprime "+supp);
+         var ajout=prenoms.unshift("samba","babacar") // ajouter un ou plusieurs elements en debut de tableau
+         alert(prenoms)
+         prenoms.push("ami","paul") // ajoute un ou plusieurs elements a la fin du tableau
+         var suppr=prenoms.shift() // supprime le premier element du tableau
+         alert("nous avons supprime "+suppr);
+        */
+       /*prenoms.splice(1,0,'Omzo','Safi'); // 1 ajouter des éléments à partir de l'index
+       // 0 indique combien d'éléments doivent être supprimés à partir de cet index, et les éléments supplémentaires spécifiés sont ajoutés à cet endroit.
+       //prenoms.splice(2,1) va supprimer un element situer avant l'element 1 et renvoie les elements supprimer
+       for(var i=0;i<prenoms.length;i++)
+         {
+            p+=" prenom"+(i+1)+" : "+prenoms[i]+"\n\n";
+         }
+         alert(p);  */
+         //prenoms.sort(); // sort pour changer dans l'ordre alphabetique mais la majuscule est prioritaire
+         //prenoms.reverse(); // est utilisée pour inverser l'ordre des éléments d'un tableau.
+         //var chaine=prenoms.join('/')   La méthode join()  est utilisée pour créer et renvoyer une nouvelle chaîne de caractères en concaténant tous les éléments d'un tableau avec un séparateur spécifié. Par défaut,
+         // si aucun séparateur n'est fourni, les éléments du tableau seront concaténés sans espace entre eux.
+        //var filles=prenoms.splice(1,4)
+        //var garcons=prenoms.splice(0)
+        //alert("concatenation "+filles.concat(garcons))
+        //var fusion=filles.concat(prenoms,animaux);
+        //alert("la fusion "+fusion)
+         for(var i=0;i<prenoms.length;i++)
+         {
+            p+=" prenom"+(i+1)+" : "+prenoms[i]+"\n\n";
+         }
+         alert("tableau de base: "+p);
+         
+        
+             </script>
+    
+</body>
+</html>

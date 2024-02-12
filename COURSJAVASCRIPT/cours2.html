@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            height: 100vh;
+            margin: 0;
+            margin: 20px;
+            background-color: gray;
+        }
+
+        form {
+            display: inline-block;
+            text-align: center;
+            border: 5px solid #ccc;
+            border-color: white;
+            padding: 50px;
+            margin-top: 80px; 
+            border-radius: 60px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            
+        }
+        input {
+            margin-bottom: 10px;
+            padding: 8px;
+            width: 200px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: gray;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+
+
+</head>
+<body>
+    <!--p id="resultat"></p--> 
+    <form id="monFormulaire" action="#" method="post">
+        <!-- Champ pour le prenom -->
+        <label id="L1" for="prenom">Prenom :</label>
+        <input type="text" id="prenom" name="prenom" required>
+
+        <br>
+        <!-- Champ pour le nom -->
+        <label id="L2" for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+
+        <br>
+        <input type="button" onclick="genererMail()" value="Generer" id="bouton"/>
+        <br>
+
+        <!-- Champ pour l'e-mail -->
+        
+        <input type="email" id="email" name="email" disabled>
+
+        <br>
+        <input type="reset"  value="EFFACER" id="bouton"/>
+        
+    </form>
+
+
+</body>
+<script src="cours2.js"></script>
+</html>
